@@ -11,8 +11,9 @@ Cette liste contient 10 exercices pratiques (MES) couvrant les concepts avancés
 Chaque exercice doit respecter la configuration suivante :
 
 #### Stack Technique Requise09
+
 - **React** : Version 18+ avec TypeScript
-- **Build Tool** : Vite 
+- **Build Tool** : Vite
 - **Package Manager** : npm, yarn ou pnpm
 - **Node.js** : Version 18+ LTS
 - **TypeScript** : Version 5+
@@ -74,6 +75,7 @@ npm run build -- --analyze
 ## MES 1 : React Router - Navigation et Routes Dynamiques
 
 **Objectifs :**
+
 - Configurer React Router v6 dans une application
 - Créer des routes imbriquées et des layouts partagés
 - Implémenter des routes dynamiques avec paramètres
@@ -81,6 +83,7 @@ npm run build -- --analyze
 
 **Exercice :**
 Créer une application de blog avec :
+
 - Page d'accueil listant les articles
 - Page de détail d'article (route dynamique `/article/:id`)
 - Page "À propos" et "Contact"
@@ -94,6 +97,7 @@ Créer une application de blog avec :
 ## MES 2 : React Router - Routes Protégées et Authentification
 
 **Objectifs :**
+
 - Implémenter un système d'authentification simulé
 - Créer des routes protégées nécessitant une connexion
 - Rediriger les utilisateurs non authentifiés
@@ -101,6 +105,7 @@ Créer une application de blog avec :
 
 **Exercice :**
 Étendre l'application précédente avec :
+
 - Page de connexion/déconnexion
 - Routes protégées pour créer/éditer des articles
 - Composant ProtectedRoute réutilisable
@@ -114,6 +119,7 @@ Créer une application de blog avec :
 ## MES 3 : React Hooks Avancés - useReducer et useContext
 
 **Objectifs :**
+
 - Maîtriser `useReducer` pour la gestion d'état complexe
 - Combiner `useReducer` avec `useContext` pour un état global
 - Créer des actions et reducers typés (TypeScript)
@@ -121,6 +127,7 @@ Créer une application de blog avec :
 
 **Exercice :**
 Créer un panier d'achat avec :
+
 - Ajout/suppression/modification de quantité d'articles
 - Calcul automatique du total
 - Gestion de l'état avec useReducer
@@ -134,6 +141,7 @@ Créer un panier d'achat avec :
 ## MES 4 : React Hooks Avancés - useCallback, useMemo et Performance
 
 **Objectifs :**
+
 - Optimiser les performances avec `useMemo` et `useCallback`
 - Comprendre le re-rendering et la mémoïsation
 - Utiliser React DevTools Profiler
@@ -141,6 +149,7 @@ Créer un panier d'achat avec :
 
 **Exercice :**
 Créer une application de filtrage de données avec :
+
 - Liste de 1000+ éléments
 - Filtres multiples (recherche, catégorie, prix)
 - Tri personnalisable
@@ -155,6 +164,7 @@ Créer une application de filtrage de données avec :
 ## MES 5 : React Hooks Avancés - useRef, useImperativeHandle et Custom Hooks
 
 **Objectifs :**
+
 - Maîtriser `useRef` pour les références DOM et valeurs mutables
 - Utiliser `useImperativeHandle` avec `forwardRef`
 - Créer des custom hooks réutilisables
@@ -162,6 +172,7 @@ Créer une application de filtrage de données avec :
 
 **Exercice :**
 Créer une bibliothèque de composants avec :
+
 - Input avec focus automatique (useRef)
 - Modal avec gestion du focus trap
 - Hook personnalisé `useLocalStorage`
@@ -176,6 +187,7 @@ Créer une bibliothèque de composants avec :
 ## MES 6 : React Query - Fetching et Cache de Données
 
 **Objectifs :**
+
 - Configurer React Query (TanStack Query)
 - Effectuer des requêtes GET avec `useQuery`
 - Gérer le loading, error et success states
@@ -184,6 +196,7 @@ Créer une bibliothèque de composants avec :
 
 **Exercice :**
 Créer une application de galerie d'images avec API :
+
 - Récupération de photos depuis une API (ex: JSONPlaceholder, Unsplash)
 - Affichage avec états de chargement et erreur
 - Pagination ou infinite scroll
@@ -198,6 +211,7 @@ Créer une application de galerie d'images avec API :
 ## MES 7 : React Query - Mutations et Invalidation du Cache
 
 **Objectifs :**
+
 - Effectuer des mutations (POST, PUT, DELETE) avec `useMutation`
 - Invalider et mettre à jour le cache après mutation
 - Gérer l'optimistic update
@@ -205,6 +219,7 @@ Créer une application de galerie d'images avec API :
 
 **Exercice :**
 Créer une application TODO avancée avec API :
+
 - CRUD complet (Create, Read, Update, Delete)
 - useMutation pour POST/PUT/DELETE
 - Invalidation du cache après mutation
@@ -219,6 +234,7 @@ Créer une application TODO avancée avec API :
 ## MES 8 : Redux Toolkit - Configuration et Slices
 
 **Objectifs :**
+
 - Configurer Redux Toolkit dans une application React
 - Créer des slices avec `createSlice`
 - Utiliser `configureStore`
@@ -227,6 +243,7 @@ Créer une application TODO avancée avec API :
 
 **Exercice :**
 Créer une application de gestion de tâches multi-projets :
+
 - Store Redux avec plusieurs slices (projects, tasks, user)
 - Actions et reducers avec createSlice
 - Sélecteurs pour récupérer les données
@@ -241,6 +258,7 @@ Créer une application de gestion de tâches multi-projets :
 ## MES 9 : Redux Toolkit - Async Thunks et RTK Query
 
 **Objectifs :**
+
 - Gérer les appels API asynchrones avec `createAsyncThunk`
 - Utiliser RTK Query pour le data fetching
 - Configurer les endpoints API
@@ -249,6 +267,7 @@ Créer une application de gestion de tâches multi-projets :
 
 **Exercice :**
 Créer une application e-commerce avec :
+
 - RTK Query pour les appels API (produits, catégories)
 - createAsyncThunk pour les actions complexes (checkout)
 - Gestion du panier avec Redux Toolkit
@@ -263,6 +282,7 @@ Créer une application e-commerce avec :
 ## MES 10 : React Hook Form - Formulaires Complexes et Validation
 
 **Objectifs :**
+
 - Configurer React Hook Form
 - Créer des formulaires performants et non contrôlés
 - Implémenter la validation avec Zod ou Yup
@@ -271,6 +291,7 @@ Créer une application e-commerce avec :
 
 **Exercice :**
 Créer un formulaire d'inscription multi-étapes :
+
 - Étape 1 : Informations personnelles (nom, email, mot de passe)
 - Étape 2 : Adresse (rue, ville, code postal, pays)
 - Étape 3 : Préférences (newsletter, notifications)
@@ -291,6 +312,7 @@ Créer un formulaire d'inscription multi-étapes :
 
 **Exercice :**
 Créer une application de gestion de projets (type Trello/Asana simplifié) :
+
 - **React Router** : Navigation entre projets, tableaux, paramètres
 - **Redux Toolkit** : État global (projets, tâches, utilisateur)
 - **RTK Query** : Synchronisation avec API backend
@@ -300,6 +322,7 @@ Créer une application de gestion de projets (type Trello/Asana simplifié) :
 - **Authentification** : Routes protégées
 
 **Fonctionnalités :**
+
 - Authentification utilisateur
 - CRUD projets et tâches
 - Drag & drop (react-beautiful-dnd)
