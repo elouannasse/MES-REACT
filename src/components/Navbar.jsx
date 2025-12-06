@@ -34,6 +34,10 @@ export default function Navbar() {
       <NavLink to="/cart" style={activeStyle}>
         Cart
       </NavLink>
+      {" | "}
+      <NavLink to="/performance" style={activeStyle}>
+        Performance
+      </NavLink>
 
       <span style={{ float: "right" }}>
         {user ? (
