@@ -1,21 +1,51 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
+
+const activeStyle = ({ isActive }) =>
+  isActive ? { fontWeight: "bold", textDecoration: "underline" } : undefined;
 
 export default function Navbar() {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
   return (
-    <nav style={{ padding: 20, background: "#eee" }}>
-      <Link to="/" style={{ marginRight: 10 }}>
+    <nav style={{ padding: 12, borderBottom: "1px solid #ddd" }}>
+      <NavLink to="/" style={activeStyle}>
         Home
-      </Link>
-      <Link to="/about" style={{ marginRight: 10 }}>
+      </NavLink>
+      {" | "}
+      <NavLink to="/about" style={activeStyle}>
         About
-      </Link>
-      <Link to="/contact" style={{ marginRight: 10 }}>
+      </NavLink>
+      {" | "}
+      <NavLink to="/contact" style={activeStyle}>
         Contact
-      </Link>
-      <Link to="/article/1" style={{ marginRight: 10 }}>
-        Article 1
-      </Link>
-      <Link to="/article/2">Article 2</Link>
+      </NavLink>
+      {" | "}
+      <NavLink to="/create" style={activeStyle}>
+        Create
+      </NavLink>
+
+      <span style={{ float: "right" }}>
+        {user ? (
+          <>
+            <span style={{ marginRight: 8 }}>Hi, {user.name}</span>
+            <button
+              onClick={() => {
+                logout();
+                navigate("/");
+              }}
+            >
+              Logout
+            </button>
+          </>
+        ) : (
+          <NavLink to="/login" style={activeStyle}>
+            Login
+          </NavLink>
+        )}
+      </span>
     </nav>
   );
 }
