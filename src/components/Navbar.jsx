@@ -26,6 +26,14 @@ export default function Navbar() {
       <NavLink to="/create" style={activeStyle}>
         Create
       </NavLink>
+      {" | "}
+      <NavLink to="/shop" style={activeStyle}>
+        Shop
+      </NavLink>
+      {" | "}
+      <NavLink to="/cart" style={activeStyle}>
+        Cart
+      </NavLink>
 
       <span style={{ float: "right" }}>
         {user ? (
