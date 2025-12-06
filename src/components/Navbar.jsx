@@ -38,6 +38,10 @@ export default function Navbar() {
       <NavLink to="/performance" style={activeStyle}>
         Performance
       </NavLink>
+      {" | "}
+      <NavLink to="/hooks" style={activeStyle}>
+        Hooks
+      </NavLink>
 
       <span style={{ float: "right" }}>
         {user ? (

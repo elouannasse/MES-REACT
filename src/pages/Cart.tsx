@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Cart() {
   const { state, dispatch } = useCart();
 
-  // Calcul du total
+  
   const total = state.items.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0

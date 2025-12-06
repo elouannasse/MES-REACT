@@ -7,9 +7,7 @@ interface PerformanceStatsProps {
   filterTime: number;
 }
 
-/**
- * Affiche les statistiques de performance
- */
+
 const PerformanceStats = memo(
   ({
     totalProducts,
@@ -63,7 +61,7 @@ const PerformanceStats = memo(
             color: "#1e40af",
           }}
         >
-          {/*  Ouvrez la console pour voir les logs de re-rendering */}
+           Ouvrez la console pour voir les logs de re-rendering
         </p>
       </div>
     );

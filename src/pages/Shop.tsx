@@ -12,17 +12,17 @@ export default function Shop() {
   const { state, dispatch } = useCart();
 
   const handleAddToCart = (product: (typeof products)[0]) => {
-    // Vérifier si le produit existe déjà dans le panier
+   
     const existingItem = state.items.find((item) => item.id === product.id);
 
     if (existingItem) {
-      // Incrémenter la quantité
+     
       dispatch({
         type: "UPDATE_QUANTITY",
         payload: { id: product.id, quantity: existingItem.quantity + 1 },
       });
     } else {
-      // Ajouter nouveau produit
+     
       dispatch({
         type: "ADD_ITEM",
         payload: { ...product, quantity: 1 },

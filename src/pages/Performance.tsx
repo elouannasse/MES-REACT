@@ -7,7 +7,7 @@ import PerformanceStats from "../components/PerformanceStats";
 
 
 export default function Performance() {
-  // État des filtres
+ 
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("");
   const [minPrice, setMinPrice] = useState(0);
@@ -44,17 +44,17 @@ export default function Performance() {
       );
     }
 
-    // Filtre par catégorie
+  
     if (category) {
       filtered = filtered.filter((p) => p.category === category);
     }
 
-    // Filtre par prix
+  
     filtered = filtered.filter(
       (p) => p.price >= minPrice && p.price <= maxPrice
     );
 
-    // Tri
+   
     switch (sortBy) {
       case "name":
         filtered = [...filtered].sort((a, b) => a.name.localeCompare(b.name));

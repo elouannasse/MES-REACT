@@ -7,10 +7,7 @@ interface ProductListProps {
   renderCount: number;
 }
 
-/**
- * Liste de produits optimisée avec React.memo
- * Ne re-render que si la liste de produits change
- */
+
 const ProductList = memo(({ products, renderCount }: ProductListProps) => {
   console.log(
     ` ProductList render #${renderCount} - ${products.length} produits`

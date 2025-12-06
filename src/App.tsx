@@ -13,6 +13,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import Performance from "./pages/Performance";
+import AdvancedHooks from "./pages/AdvancedHooks";
 
 import { CartProvider } from "./context/CartContext";
 
@@ -52,6 +53,7 @@ export default function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/performance" element={<Performance />} />
+          <Route path="/hooks" element={<AdvancedHooks />} />
 
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<Navigate to="/404" replace />} />
